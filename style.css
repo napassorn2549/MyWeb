@@ -7,9 +7,9 @@
 }
 
 body {
-    color: #4A3B32; /* สีน้ำตาลเข้มซอฟต์ๆ สำหรับตัวหนังสือ อ่านง่าย */
+    color: #4A3B32;
     line-height: 1.6;
-    background-color: #FFF9F5; /* สีครีมนม อบอุ่น */
+    background-color: #FFF9F5;
 }
 
 .container {
@@ -22,18 +22,22 @@ body {
     padding: 60px 0;
 }
 
-/* พื้นหลังส่วนสลับ สีชมพูพาสเทลอ่อนๆ */
 .bg-light {
     background-color: #FFF0F3; 
 }
 
-/* หัวข้อประจำส่วน */
 .section-title {
     text-align: center;
     font-size: 2rem;
-    color: #D8698B; /* สีชมพูสตอเบอร์รี่เข้ม */
+    color: #D8698B;
     margin-bottom: 30px;
     position: relative;
+}
+
+.logo-img {
+    max-height: 80px;  /* ปรับจากเดิม (เช่น 80px) ให้ลดลงเหลือ 50px หรือ 40px ตามความเหมาะสม */
+    width: auto;       /* คงสัดส่วนรูปภาพไม่ให้เบี้ยว */
+    margin-bottom: 0.5rem;
 }
 
 .section-title::after {
@@ -41,13 +45,12 @@ body {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #FFB3C6; /* ขีดเส้นใต้สีชมพูพาสเทล */
+    background-color: #FFB3C6;
     margin: 10px auto 0;
     border-radius: 2px;
 }
 
-/* 1. Header (โลโก้, ชื่อร้าน) */
-/* 1. Header (โลโก้, ชื่อร้าน) */
+/* 1. Header */
 .header {
     background-color: #FFF;
     padding: 25px 0;
@@ -56,22 +59,23 @@ body {
 
 .logo-box {
     display: flex;
-    flex-direction: column; /* เปลี่ยนให้เรียงเป็นแนวตั้ง (โลโก้อยู่บน ชื่ออยู่ล่าง) */
-    align-items: center;     /* จัดทุกอย่างให้อยู่ตรงกลางตามแนวขวาง */
-    justify-content: center; /* จัดให้อยู่ตรงกลาง */
-    text-align: center;      /* จัดข้อความให้อยู่ตรงกลาง */
-    gap: 12px;               /* ระยะห่างระหว่างโลโก้กับชื่อร้าน */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
 }
 
-.site-logo {
-    width: 110px;            /* ขยายขนาดโลโก้ให้เด่นสวยงาม */
+/* ปรับแก้คลาสให้ตรงกับ logo-img ใน HTML */
+.logo-img {
+    width: 110px;
     height: 110px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(216, 105, 139, 0.2); /* เงาสีชมพูละมุน */
+    box-shadow: 0 4px 12px rgba(216, 105, 139, 0.2);
 }
 
-.logo-text h1 {
+.logo-box h1 {
     color: #D8698B;
     font-size: 2.2rem;
     margin-bottom: 4px;
@@ -82,9 +86,9 @@ body {
     font-size: 0.95rem;
 }
 
-/* 2. Navigation (เมนูหลัก) */
+/* 2. Navigation */
 .navbar {
-    background-color: #FFB3C6; /* แถบเมนูสีชมพูนม */
+    background-color: #FFB3C6;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -107,11 +111,11 @@ body {
 }
 
 .nav-links li a:hover {
-    background-color: #FF8FAB; /* สลับสีชมพูสดขึ้นเมื่อชี้ */
+    background-color: #FF8FAB;
     color: #FFF;
 }
 
-/* 3. Hero Banner (ภาพหลัก) */
+/* 3. Hero Banner */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), 
                 url(hero-cake.jpg) center/cover no-repeat;
@@ -136,8 +140,8 @@ body {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-/* ปุ่ม 'สั่งซื้อเลย' สีชมพูหวานน่ารัก */
-.btn-primary {
+/* ปรับแก้คลาสให้ตรงกับ btn-order ใน HTML */
+.btn-order {
     background-color: #FF8FAB;
     color: white;
     padding: 12px 32px;
@@ -150,12 +154,12 @@ body {
     box-shadow: 0 4px 12px rgba(255, 143, 171, 0.4);
 }
 
-.btn-primary:hover {
+.btn-order:hover {
     background-color: #FB6F92;
     transform: translateY(-2px);
 }
 
-/* 4. About (เกี่ยวกับเรา) */
+/* 4. About */
 .about-text {
     max-width: 800px;
     margin: 0 auto;
@@ -164,7 +168,7 @@ body {
     color: #6C584C;
 }
 
-/* 5. Product Cards (การ์ดสินค้า) */
+/* 5. Product Cards */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -213,7 +217,7 @@ body {
     color: #FB6F92;
 }
 
-/* 6. Promotion Table (ตารางโปรโมชั่น) */
+/* 6. Promotion Table */
 .table-responsive {
     overflow-x: auto;
 }
@@ -243,7 +247,7 @@ body {
     background-color: #FFF0F3;
 }
 
-/* Review Section (รีวิวลูกค้า) */
+/* Review Section */
 .review-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -265,7 +269,7 @@ body {
     text-align: right;
 }
 
-/* 7. Contact Form (แบบฟอร์มติดต่อ) */
+/* 7. Contact Form */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -325,9 +329,9 @@ body {
     background-color: #FB6F92;
 }
 
-/* 8. Footer (ส่วนท้าย) */
+/* 8. Footer */
 .footer {
-    background-color: #4A3B32; /* สีน้ำตาลโกโก้อุ่นๆ ตัดกับส่วนบน */
+    background-color: #4A3B32;
     color: #FFF;
     padding: 40px 0 20px;
 }
@@ -352,7 +356,7 @@ body {
     color: #B5838D;
 }
 
-/* Responsive Design (รองรับมือถือ) */
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;

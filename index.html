@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เบเกอรี่ อศน. - อบด้วยใจ สดใหม่ทุกวัน</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ดึงฟอนต์ Google Fonts (Prompt) มาใช้เพื่อความสวยงาม -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ข้อ 1: Header ประกอบด้วย โลโก้ ชื่อร้าน และสโลแกน -->
+    <header class="header">
+    <div class="logo-box">
+        <a href="#home">
+            <img src="img/logo.jpg" alt="โลโก้ เบเกอรี่ อศน." class="logo-img">
+        </a>
+        <h1>เบเกอรี่ อศน.</h1>
+        <p class="tagline">อบด้วยใจ สดใหม่ทุกวัน ส่งตรงความอร่อยถึงมือคุณ</p>
+    </div>
+</header>
+
+    <!-- ข้อ 2: Navigation (หน้าแรก, เมนูสินค้า, โปรโมชั่น, รีวิวลูกค้า, ติดต่อเรา) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <ul class="nav-links">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#products">เมนูสินค้า</a></li>
+                <li><a href="#promotions">โปรโมชั่น</a></li>
+                <li><a href="#reviews">รีวิวลูกค้า</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- 3. Hero Banner -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>ต้อนรับสู่ความหวานหอมกรุ่นจากเตา</h2>
+        <p>สัมผัสรสชาติความอร่อยระดับพรีเมียม วัตถุดิบคุณภาพสูง ในราคาที่ทุกคนเข้าถึงได้</p>
+        <a href="#products" class="btn-order">สั่งซื้อเลย</a>
+    </div>
+</section>
+
+    <!-- ข้อ 4: ข้อความแนะนำร้าน 80-120 คำ -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">เกี่ยวกับร้าน เบเกอรี่ อศน.</h2>
+            <p class="about-text">
+                ยินดีต้อนรับสู่ ร้านเบเกอรี่ อศน. จุดเริ่มต้นแห่งความอร่อยที่เกิดจากความรักและความชื่นชอบในการทำขนมหวาน เรามุ่งมั่นคัดสรรวัตถุดิบชั้นเลิศทั้งในและต่างประเทศ เช่น เนยสดแท้ ไม่ใช้ไขมันทรานส์ และผลไม้สดใหม่ นำมารังสรรค์เป็นเมนูขนมปัง เค้ก และพายหลากหลายชนิด ขนมทุกชิ้นของเราผ่านกระบวนการพิถีพิถันและอบใหม่จากเตาทุกวัน เพื่อให้ลูกค้าได้รับสัมผัสความหอม นุ่ม อร่อย และปลอดภัยสูงสุด นอกเหนือจากคุณภาพแล้ว เรายังให้ความสำคัญกับการบริการด้วยรอยยิ้ม และพร้อมสร้างความประทับใจให้กับทุกคำที่คุณได้ลิ้มลอง มาร่วมสัมผัสความสุขกับเบเกอรี่ อศน. ได้แล้ววันนี้
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. Product Card (6 รายการ) -->
+    <section id="products" class="products section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">เมนูสินค้าแนะนำ</h2>
+            <div class="product-grid">
+                
+                <!-- Card 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=80" alt="ช็อกโกแลตบราวนี่">
+                    <div class="product-info">
+                        <h3>ช็อกโกแลตบราวนี่</h3>
+                        <p>เนื้อหนึบหนับ เข้มข้นช็อกโกแลตแท้ โรยช็อกชิพเต็มคำ</p>
+                        <span class="price">65 บาท</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" alt="เค้กช็อกโกแลตลาวา">
+                    <div class="product-info">
+                        <h3>เค้กช็อกโกแลตลาวา</h3>
+                        <p>ช็อกโกแลตเข้มข้น ไส้เยิ้มทะลัก หวานกำลังดี</p>
+                        <span class="price">85 บาท</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card">
+                    <img src="danish.jpg" alt="เดนิชพายผลไม้สด">
+                    <div class="product-info">
+                        <h3>เดนิชพายผลไม้สด</h3>
+                        <p>แป้งพายกรอบถ้วยสวย ราดคัสตาร์ดนุ่มๆ แต่งหน้าด้วยสตรอว์เบอร์รี่และบลูเบอร์รี่สด</p>
+                        <span class="price">95 บาท</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="ขนมปังธัญพืช">
+                    <div class="product-info">
+                        <h3>ขนมปังโฮลวีตธัญพืช</h3>
+                        <p>ขนมปังเพื่อสุขภาพ อุดมไปด้วยคุณประโยชน์จากธัญพืช</p>
+                        <span class="price">55 บาท</span>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=400&q=80" alt="คุกกี้ช็อกโกแลตชิพ">
+                    <div class="product-info">
+                        <h3>คุกกี้ช็อกโกแลตชิพ</h3>
+                        <p>คุกกี้เนื้อแน่น กรอบนอกนุ่มใน ใส่ช็อกชิพเต็มคำ</p>
+                        <span class="price">45 บาท</span>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=400&q=80" alt="ทาร์ตไข่ฮ่องกง">
+                    <div class="product-info">
+                        <h3>ทาร์ตไข่ฮ่องกง</h3>
+                        <p>แป้งพายพัฟกรอบๆ ไส้คัสตาร์ดไข่นุ่มละมุนลิ้น</p>
+                        <span class="price">35 บาท</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ข้อ 6: ตารางโปรโมชั่นอย่างน้อย 5 รายการ -->
+    <section id="promotions" class="promotions section-padding">
+        <div class="container">
+            <h2 class="section-title">โปรโมชั่นประจำเดือน</h2>
+            <div class="table-responsive">
+                <table class="promo-table">
+                    <thead>
+                        <tr>
+                            <th>ลำดับ</th>
+                            <th>รายการโปรโมชั่น</th>
+                            <th>รายละเอียด / เงื่อนไข</th>
+                            <th>ส่วนลด/สิทธิพิเศษ</th>
+                            <th>ระยะเวลา</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Early Bird Special</td>
+                            <td>ซื้อเบเกอรี่ชนิดใดก็ได้ก่อน 09:00 น.</td>
+                            <td>ลดทันที 15%</td>
+                            <td>วันนี้ - 31 ส.ค. 69</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Morning Combo Set</td>
+                            <td>ซื้อกาแฟสด คู่กับ ครัวซองต์เนยสด</td>
+                            <td>ราคาพิเศษ 99 บาท</td>
+                            <td>ตลอดเดือนนี้</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Birthday Party Card</td>
+                            <td>สั่งเค้กวันเกิดขนาด 2 ปอนด์ขึ้นไป</td>
+                            <td>ฟรี! เทียน + การ์ดอวยพร</td>
+                            <td>ตลอดปี 2026</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Wednesday Buy 3 Get 1</td>
+                            <td>ซื้อทาร์ตไข่ครบ 3 ชิ้น ทุกวันพุธ</td>
+                            <td>ฟรี! ทาร์ตไข่ 1 ชิ้น</td>
+                            <td>เฉพาะวันพุธ</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Student Care</td>
+                            <td>แสดงบัตรนักเรียน / นักศึกษา อศน.</td>
+                            <td>ลดทันที 10% ทุกเมนู</td>
+                            <td>ไม่มีวันหมดอายุ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ส่วนรีวิวลูกค้า (เสริมตามเมนู Navigation) -->
+    <section id="reviews" class="reviews section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">เสียงจากลูกค้าของเรา</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p class="review-text">"ครัวซองต์หอมเนยมาก อบใหม่ๆ กรอบนอกนุ่มใน ประทับใจมากค่ะ"</p>
+                    <p class="reviewer">- คุณสมศรี มีสุข</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"สั่งเค้กวันเกิดให้เพื่อน ช็อกโกแลตอร่อยเข้มข้น บริการดีเยี่ยมครับ"</p>
+                    <p class="reviewer">- คุณธนพล คนขยัน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ข้อ 7: Contact Form (text, tel, email, select, textarea, submit) -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">ติดต่อสอบถาม / สั่งซื้อ</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">ชื่อ - นามสกุล:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="กรุณากรอกชื่อ-นามสกุล" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="08X-XXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">เรื่องที่ต้องการติดต่อ:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- กรุณาเลือกหัวข้อ --</option>
+                        <option value="order">สอบถาม/สั่งซื้อสินค้า</option>
+                        <option value="catering">จัดเบรก / สัมมนา</option>
+                        <option value="complaint">ติชมบริการ</option>
+                        <option value="other">อื่นๆ</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">ข้อความรายละเอียด:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="ระบุรายละเอียดเพิ่มเติม..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">ส่งข้อความ</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ข้อ 8: Footer พร้อมข้อมูลติดต่อ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>ร้านเบเกอรี่ อศน.</h3>
+                <p>📍 ที่อยู่: วิทยาลัยอาชีวศึกษา... (อศน.)</p>
+                <p>📞 โทรศัพท์: 02-123-4567, 089-999-9999</p>
+                <p>✉️ อีเมล: info@osnbakery.com</p>
+                <p>⏰ เวลาเปิด-ปิด: ทุกวัน 07:00 - 19:00 น.</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Bakery OSN. All Rights Reserved. | พัฒนาโดย นักศึกษา ปวส.2 ทด.2</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
